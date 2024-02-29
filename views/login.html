@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MercadoLiebre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/register-login.css">
+</head>
+
+<body class="body">
+    <header class="header">
+        <div class="contenedor">
+            <nav class="header__nav nav">
+                <section class="nav__section section--logo">
+                    <a class="nav__link link--logo" href="#">
+                        <picture class="nav__picture">
+                            <img class="nav__image image--logo" src="/images/logo-mercado-liebre.svg"
+                                alt="Logo Mercado Liebre" />
+                        </picture>
+                    </a>
+                    <div class="nav__container container--search">
+                        <input class="nav__input imput--search" type="text" placeholder="Buscar productos, marcas">
+                        <button class="nav__btn btn--search btn" type="submit">
+                            <i class="btn__icon fas fa-search"></i>
+                        </button>
+                    </div>
+                </section>
+
+                <section class="nav__section section--payment">
+                    <i class="nav__icon fas fa-hand-holding-dollar"></i>
+                    <p class="nav__paragraph">Compra en cuotas y sin tarjeta de crédito</p>
+                </section>
+
+                <section class="nav__section section--list">
+                    <div class="nav__container container--btn">
+                        <button class="nav__btn btn--burguer">
+                            <i class="btn__icon fas fa-bars"></i>
+                        </button>
+                    </div>
+                    <ul class="nav__list list--header">
+                        <li class="list__item">
+                            <a class="list__link" href="#">
+                                Ofertas
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a class="list__link" href="#">
+                                Tiendas oficiales
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a class="list__link" href="#">
+                                Vender
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a class="list__link" href="#">
+                                Ayuda
+                            </a>
+                        </li>
+                        <li class="list__item item--user">
+                            <ul class="list list--user">
+                                <li class="list__item">
+                                    <a class="list__link" href="/registro">
+                                        Creá tu cuenta
+                                        <i class="fas fa-address-card"></i>
+                                    </a>
+                                </li>
+                                <li class="list__item">
+                                    <a class="list__link" href="/ingresar">
+                                        Ingresá
+                                        <i class="fas fa-right-to-bracket"></i>
+                                    </a>
+                                </li>
+                                <li class="list__item">
+                                    <a class="list__link" href="#">
+                                        Mis compras
+                                        <i class="fas fa-basket-shopping"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="contenedor">
+            <h2 class="page__login">Ingresá a tu cuenta</h2>
+            <form class="login" action="" method="post">
+                <ul class="login__list">
+                    <li class="login__item">
+                        <label class="login__box" for="usuario_usuario">
+                            <input class="input__login" type="text" id="usuario" name="usuario_usuario"
+                                placeholder="Nombre de usuario">
+                            <span class="error"></span>
+                        </label>
+                    </li>
+                    <li class="login__item">
+                        <label class="login__box" for="contraseña_usuario">
+                            <input class="input__login" type="password" id="Contraseña" name="contraseña_usuario"
+                                placeholder="Elegí tu contraseña">
+                            <span class="error"></span>
+                        </label>
+                    </li>
+                </ul>
+                <button class="login__boton" type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="contenedor contenedor--footer">
+            <section class="footer__section">
+                <i class="footer__icon fas fa-credit-card"></i>
+                <h4 class="footer__title">Pagá con tarjeta o en efectivo</h4>
+                <p class="footer__paragraph">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                    puntos de pago. ¡Y siempre es seguro!</p>
+            </section>
+            <section class="footer__section">
+                <i class="footer__icon fas fa-gift"></i>
+                <h4 class="footer__title">Envío gratis desde $ 2.500</h4>
+                <p class="footer__paragraph">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                    productos. Es un beneficio de Mercado Puntos.</p>
+            </section>
+            <section class="footer__section">
+                <i class="footer__icon fas fa-shield-halved"></i>
+                <h4 class="footer__title">Seguridad, de principio a fin</h4>
+                <p class="footer__paragraph">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas
+                    hacer,
+                    porque estás siempre protegid@.</p>
+            </section>
+            <section class="footer__section section--copy">
+                <p class="footer__paragraph">
+                    <small class="footer__text">
+                        Copyright &copy; 1999-2020 MercadoLiebre S.R.L.</time>
+                    </small>
+                </p>
+            </section>
+        </div>
+    </footer>
+</body>
+
+</html>

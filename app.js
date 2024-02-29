@@ -7,7 +7,13 @@ const port = process.env.PORT || 3030;
 app.use(express.static(publicPath));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/home.html'))
+    res.sendFile(path.join(__dirname, '/views/home.html'));
+});
+app.get('/registro', (req, res) => {
+    res.sendFile(path.join(__dirname, '/views/register.html'));
+});
+app.get('/ingresar', (req, res) => {
+    res.sendFile(path.join(__dirname, '/views/login.html'));
 });
 
 app.listen(port, () => console.log(`Levantando un servidor con Express en el puerto ${port}`));

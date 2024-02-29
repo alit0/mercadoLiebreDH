@@ -1,207 +1,304 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MercadoLiebre</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="/css/styles.css">
 </head>
+
 <body class="body">
     <header class="header">
-        <nav class="header__nav nav">
-            <section class="nav__section section--logo">
-                <a class="nav__link link--logo" href="#">
-                    <picture class="nav__picture">
-                        <img class="nav__image image--logo" src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre" />
-                    </picture>
-                </a>
-                <div class="nav__container container--search">
-                    <input class="nav__input imput--search" type="text" placeholder="Buscar productos, marcas">
-                    <button class="nav__btn btn--search btn" type="submit">
-                        <i class="btn__icon fas fa-search"></i>
-                    </button>
-                </div>
-            </section>
+        <div class="contenedor">
+            <nav class="header__nav nav">
+                <section class="nav__section section--logo">
+                    <a class="nav__link link--logo" href="/">
+                        <picture class="nav__picture">
+                            <img class="nav__image image--logo" src="/images/logo-mercado-liebre.svg"
+                                alt="Logo Mercado Liebre" />
+                        </picture>
+                    </a>
+                    <div class="nav__container container--search">
+                        <input class="nav__input imput--search" type="text" placeholder="Buscar productos, marcas">
+                        <button class="nav__btn btn--search btn" type="submit">
+                            <i class="btn__icon fas fa-search"></i>
+                        </button>
+                    </div>
+                </section>
 
-            <section class="nav__section section--payment">
-                <i class="nav__icon fas fa-hand-holding-dollar" ></i>
-                <p class="nav__paragraph">Compra en cuotas y sin tarjeta de crédito</p>
-            </section>
+                <section class="nav__section section--payment">
+                    <i class="nav__icon fas fa-hand-holding-dollar"></i>
+                    <p class="nav__paragraph">Compra en cuotas y sin tarjeta de crédito</p>
+                </section>
 
-            <section class="nav__section section--list">
-                <div class="nav__container container--btn">
-                    <button class="nav__btn btn--burguer">
-                        <i class="btn__icon fas fa-bars"></i>
-                    </button>
-                </div>
-                <ul class="nav__list list--header">
-                    <li class="list__item">
-                        <a class="list__link" href="#">
-                            Ofertas
-                        </a>
-                    </li>
-                    <li class="list__item">
-                        <a class="list__link" href="#">
-                            Tiendas oficiales
-                        </a>
-                    </li>
-                    <li class="list__item">
-                        <a class="list__link" href="#">
-                            Vender
-                        </a>
-                    </li>
-                    <li class="list__item">
-                        <a class="list__link" href="#">
-                            Ayuda
-                        </a>
-                    </li>
-                    <li class="list__item item--user">
-                        <ul class="list list--user">
-                            <li class="list__item">
-                                <a class="list__link" href="#">
-                                    Creá tu cuenta
-                                    <i class="fas fa-address-card"></i>
-                                </a>
-                            </li>
-                            <li class="list__item">
-                                <a class="list__link" href="#">
-                                    Ingresá
-                                    <i class="fas fa-right-to-bracket"></i>
-                                </a>
-                            </li>
-                            <li class="list__item">
-                                <a class="list__link" href="#">
-                                    Mis compras
-                                    <i class="fas fa-basket-shopping"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
-        </nav>
+                <section class="nav__section section--list">
+                    <div class="nav__container container--btn">
+                        <button class="nav__btn btn--burguer">
+                            <i class="btn__icon fas fa-bars"></i>
+                        </button>
+                    </div>
+                    <ul class="nav__list list--header">
+                        <li class="list__item">
+                            <a class="list__link" href="#">
+                                Ofertas
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a class="list__link" href="#">
+                                Tiendas oficiales
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a class="list__link" href="#">
+                                Vender
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a class="list__link" href="#">
+                                Ayuda
+                            </a>
+                        </li>
+                        <li class="list__item item--user">
+                            <ul class="list list--user">
+                                <li class="list__item">
+                                    <a class="list__link" href="/registro">
+                                        Creá tu cuenta
+                                        <i class="fas fa-address-card"></i>
+                                    </a>
+                                </li>
+                                <li class="list__item">
+                                    <a class="list__link" href="/ingresar">
+                                        Ingresá
+                                        <i class="fas fa-right-to-bracket"></i>
+                                    </a>
+                                </li>
+                                <li class="list__item">
+                                    <a class="list__link" href="#">
+                                        Mis compras
+                                        <i class="fas fa-basket-shopping"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+            </nav>
+        </div>
     </header>
     <aside class="aside">
         <section class="aside__section">
-            <a class="aside__link" href="#">
-                <img class="aside__banner" src="/images/img-home-banner.jpg" alt="">
-            </a>
+            <div class="contenedor">
+                <a class="aside__link" href="#">
+                    <img class="aside__banner" src="/images/img-home-banner.jpg" alt="">
+                </a>
+            </div>
         </section>
     </aside>
     <main class="main">
-        <section class="main__section section--most-viewed">
-            <h2 class="main__title">Basado en tu última visita</h2>
-            <article class="main__card card card--most-viewed">
-                <header class="card__header">
-                    <picture class="card__picture">
-                        <img class="card__image" src="/images/img-cafetera-moulinex.jpg" alt="">
-                    </picture>
-                </header>
-                <footer class="card__footer">
-                    <section class="card__section section--prise">
-                        <div class="card__container container--truck">
-                            <i class="card__icon icon--truck fa fa-truck"></i>
-                        </div>
-                        <div class="card__container container--prise">
-                            <h3 class="card__prise">$6.770</h3>
-                            <p class="card__sale">40% off</p>
-                        </div>
-                        <h2 class="card__product">Cafetera Moulinex</h2>
-                    </section>
-                </footer>
-            </article>
+        <div class="contenedor">
+            <section class="main__section section--most-viewed">
+                <h2 class="main__title">Basado en tu última visita</h2>
+                <article class="main__card card card--most-viewed">
+                    <header class="card__header">
+                        <picture class="card__picture">
+                            <img class="card__image" src="/images/img-cafetera-moulinex.jpg" alt="">
+                        </picture>
+                    </header>
+                    <footer class="card__footer">
+                        <section class="card__section section--prise">
+                            <div class="card__container container--truck">
+                                <i class="card__icon icon--truck fa fa-truck"></i>
+                            </div>
+                            <div class="card__container container--prise">
+                                <h3 class="card__prise">$6.770</h3>
+                                <p class="card__sale">40% off</p>
+                            </div>
+                            <h2 class="card__product">Cafetera Moulinex</h2>
+                        </section>
+                    </footer>
+                </article>
 
-            <article class="main__card card card--most-viewed">
-                <header class="card__header">
-                    <picture class="card__picture">
-                        <img class="card__image" src="/images/img-macbook-pro-2019.jpg" alt="">
-                    </picture>
-                </header>
-                <footer class="card__footer">
-                    <section class="card__section section--prise">
-                        <div class="card__container container--truck">
-                            <i class="card__icon icon--truck fa fa-truck"></i>
-                        </div>
-                        <div class="card__container container--prise">
-                            <h3 class="card__prise">$230.000</h3>
-                            <p class="card__sale">20% off</p>
-                        </div>
-                        <h2 class="card__product">MacBook Pro 2019</h2>
-                    </section>
-                </footer>
-            </article>
+                <article class="main__card card card--most-viewed">
+                    <header class="card__header">
+                        <picture class="card__picture">
+                            <img class="card__image" src="/images/img-macbook-pro-2019.jpg" alt="">
+                        </picture>
+                    </header>
+                    <footer class="card__footer">
+                        <section class="card__section section--prise">
+                            <div class="card__container container--truck">
+                                <i class="card__icon icon--truck fa fa-truck"></i>
+                            </div>
+                            <div class="card__container container--prise">
+                                <h3 class="card__prise">$230.000</h3>
+                                <p class="card__sale">20% off</p>
+                            </div>
+                            <h2 class="card__product">MacBook Pro 2019</h2>
+                        </section>
+                    </footer>
+                </article>
 
-            <article class="main__card card card--most-viewed">
-                <header class="card__header">
-                    <picture class="card__picture">
-                        <img class="card__image" src="/images/img-samsung-galaxy-s10.jpg" alt="">
-                    </picture>
-                </header>
-                <footer class="card__footer">
-                    <section class="card__section section--prise">
-                        <div class="card__container container--truck">
-                            <i class="card__icon icon--truck fa fa-truck"></i>
-                        </div>
-                        <div class="card__container container--prise">
-                            <h3 class="card__prise">$70.500</h3>
-                            <p class="card__sale">10% off</p>
-                        </div>
-                        <h2 class="card__product">Samsung Galaxy S10</h2>
-                    </section>
-                </footer>
-            </article>
+                <article class="main__card card card--most-viewed">
+                    <header class="card__header">
+                        <picture class="card__picture">
+                            <img class="card__image" src="/images/img-samsung-galaxy-s10.jpg" alt="">
+                        </picture>
+                    </header>
+                    <footer class="card__footer">
+                        <section class="card__section section--prise">
+                            <div class="card__container container--truck">
+                                <i class="card__icon icon--truck fa fa-truck"></i>
+                            </div>
+                            <div class="card__container container--prise">
+                                <h3 class="card__prise">$70.500</h3>
+                                <p class="card__sale">10% off</p>
+                            </div>
+                            <h2 class="card__product">Samsung Galaxy S10</h2>
+                        </section>
+                    </footer>
+                </article>
 
-            <article class="main__card card card--most-viewed">
-                <header class="card__header">
-                    <picture class="card__picture">
-                        <img class="card__image" src="/images/img-tv-samsung-smart.jpg" alt="">
-                    </picture>
-                </header>
-                <footer class="card__footer">
-                    <section class="card__section section--prise">
-                        <div class="card__container container--truck">
-                            <i class="card__icon icon--truck fa fa-truck"></i>
-                        </div>
-                        <div class="card__container container--prise">
-                            <h3 class="card__prise">$23.200</h3>
-                            <p class="card__sale">5% off</p>
-                        </div>
-                        <h2 class="card__product">SmartTv Samsung 43"</h2>
-                    </section>
-                </footer>
-            </article>
-        </section>
+                <article class="main__card card card--most-viewed">
+                    <header class="card__header">
+                        <picture class="card__picture">
+                            <img class="card__image" src="/images/img-tv-samsung-smart.jpg" alt="">
+                        </picture>
+                    </header>
+                    <footer class="card__footer">
+                        <section class="card__section section--prise">
+                            <div class="card__container container--truck">
+                                <i class="card__icon icon--truck fa fa-truck"></i>
+                            </div>
+                            <div class="card__container container--prise">
+                                <h3 class="card__prise">$23.200</h3>
+                                <p class="card__sale">5% off</p>
+                            </div>
+                            <h2 class="card__product">SmartTv Samsung 43"</h2>
+                        </section>
+                    </footer>
+                </article>
+            </section>
+            <section class="main__section section--most-viewed">
+                <h2 class="main__title">Ofertas del mes</h2>
+                <article class="main__card card card--most-viewed">
+                    <header class="card__header">
+                        <picture class="card__picture">
+                            <img class="card__image" src="/images/img-cafetera-moulinex.jpg" alt="">
+                        </picture>
+                    </header>
+                    <footer class="card__footer">
+                        <section class="card__section section--prise">
+                            <div class="card__container container--truck">
+                                <i class="card__icon icon--truck fa fa-truck"></i>
+                            </div>
+                            <div class="card__container container--prise">
+                                <h3 class="card__prise">$6.770</h3>
+                                <p class="card__sale">40% off</p>
+                            </div>
+                            <h2 class="card__product">Cafetera Moulinex</h2>
+                        </section>
+                    </footer>
+                </article>
+
+                <article class="main__card card card--most-viewed">
+                    <header class="card__header">
+                        <picture class="card__picture">
+                            <img class="card__image" src="/images/img-macbook-pro-2019.jpg" alt="">
+                        </picture>
+                    </header>
+                    <footer class="card__footer">
+                        <section class="card__section section--prise">
+                            <div class="card__container container--truck">
+                                <i class="card__icon icon--truck fa fa-truck"></i>
+                            </div>
+                            <div class="card__container container--prise">
+                                <h3 class="card__prise">$230.000</h3>
+                                <p class="card__sale">20% off</p>
+                            </div>
+                            <h2 class="card__product">MacBook Pro 2019</h2>
+                        </section>
+                    </footer>
+                </article>
+
+                <article class="main__card card card--most-viewed">
+                    <header class="card__header">
+                        <picture class="card__picture">
+                            <img class="card__image" src="/images/img-samsung-galaxy-s10.jpg" alt="">
+                        </picture>
+                    </header>
+                    <footer class="card__footer">
+                        <section class="card__section section--prise">
+                            <div class="card__container container--truck">
+                                <i class="card__icon icon--truck fa fa-truck"></i>
+                            </div>
+                            <div class="card__container container--prise">
+                                <h3 class="card__prise">$70.500</h3>
+                                <p class="card__sale">10% off</p>
+                            </div>
+                            <h2 class="card__product">Samsung Galaxy S10</h2>
+                        </section>
+                    </footer>
+                </article>
+
+                <article class="main__card card card--most-viewed">
+                    <header class="card__header">
+                        <picture class="card__picture">
+                            <img class="card__image" src="/images/img-tv-samsung-smart.jpg" alt="">
+                        </picture>
+                    </header>
+                    <footer class="card__footer">
+                        <section class="card__section section--prise">
+                            <div class="card__container container--truck">
+                                <i class="card__icon icon--truck fa fa-truck"></i>
+                            </div>
+                            <div class="card__container container--prise">
+                                <h3 class="card__prise">$23.200</h3>
+                                <p class="card__sale">5% off</p>
+                            </div>
+                            <h2 class="card__product">SmartTv Samsung 43"</h2>
+                        </section>
+                    </footer>
+                </article>
+            </section>
+        </div>
     </main>
     <footer class="footer">
-        <section class="footer__section">
-            <i class="footer__icon fas fa-credit-card"></i>
-            <h4 class="footer__title">Pagá con tarjeta o en efectivo</h4>
-            <p class="footer__paragraph">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
-                puntos de pago. ¡Y siempre es seguro!</p>
-        </section>
-        <section class="footer__section">
-            <i class="footer__icon fas fa-gift"></i>
-            <h4 class="footer__title">Envío gratis desde $ 2.500</h4>
-            <p class="footer__paragraph">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
-                productos. Es un beneficio de Mercado Puntos.</p>
-        </section>
-        <section class="footer__section">
-            <i class="footer__icon fas fa-shield-halved"></i>
-            <h4 class="footer__title">Seguridad, de principio a fin</h4>
-            <p class="footer__paragraph">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
-                porque estás siempre protegid@.</p>
-        </section>
-        <section class="footer__section section--copy">
-            <p class="footer__paragraph">
-                <small class="footer__text">
-                    Copyright &copy; 1999-2020 MercadoLiebre S.R.L.</time>
-                </small>
-            </p>
-        </section>
+        <div class="contenedor contenedor--footer">
+            <section class="footer__section">
+                <i class="footer__icon fas fa-credit-card"></i>
+                <h4 class="footer__title">Pagá con tarjeta o en efectivo</h4>
+                <p class="footer__paragraph">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                    puntos de pago. ¡Y siempre es seguro!</p>
+            </section>
+            <section class="footer__section">
+                <i class="footer__icon fas fa-gift"></i>
+                <h4 class="footer__title">Envío gratis desde $ 2.500</h4>
+                <p class="footer__paragraph">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                    productos. Es un beneficio de Mercado Puntos.</p>
+            </section>
+            <section class="footer__section">
+                <i class="footer__icon fas fa-shield-halved"></i>
+                <h4 class="footer__title">Seguridad, de principio a fin</h4>
+                <p class="footer__paragraph">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas
+                    hacer,
+                    porque estás siempre protegid@.</p>
+            </section>
+            <section class="footer__section section--copy">
+                <p class="footer__paragraph">
+                    <small class="footer__text">
+                        Copyright &copy; 1999-2020 MercadoLiebre S.R.L.</time>
+                    </small>
+                </p>
+            </section>
+        </div>
     </footer>
 </body>
+
 </html>
